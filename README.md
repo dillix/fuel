@@ -1,38 +1,42 @@
-#Fuel
+#FuelPHP
 
+* Version: 1.2
 * [Website](http://fuelphp.com/)
-* [Documentation](http://fuelphp.com/docs)
-* [Bugtracker & feature requests](http://dev.fuelphp.com)
-* Version: 1.0.0-beta1
+* [Release Documentation](http://docs.fuelphp.com)
+* [Development Documentation](http://fueldevdocs.exite.eu) and in its own [git repo](https://github.com/fuel/docs)
+* [Forums](http://fuelphp.com/forums) for comments, discussion and community support
 
 ## Description
 
-Fuel is a fast, lightweight PHP 5.3 framework. In an age where frameworks are a dime a dozen, We believe that Fuel will stand out in the crowd.  It will do this by combining all the things you love about the great frameworks out there, while getting rid of the bad.
-
-Let us know what you would like to see in Fuel at [http://community.fuelphp.com/fuelphp](http://community.fuelphp.com/fuelphp).
+FuelPHP is a fast, lightweight PHP 5.3 framework. In an age where frameworks are a dime a dozen, We believe that FuelPHP will stand out in the crowd.  It will do this by combining all the things you love about the great frameworks out there, while getting rid of the bad.
 
 ##Development Team
 
-* Dan Horrigan - Lead Developer ([http://dhorrigan.com](http://dhorrigan.com))
+* Harro Verton - Project Manager, Developer ([http://wanwizard.eu/](http://wanwizard.eu/))
+* Jelmer Schreuder - Project Architect, Senior Developer ([http://jelmerschreuder.nl/](http://jelmerschreuder.nl/))
+* Frank de Jonge - Developer ([http://frenky.net/](http://frenky.net/))
 * Phil Sturgeon - Developer ([http://philsturgeon.co.uk](http://philsturgeon.co.uk))
-* Jelmer Schreuder - Developer ([http://jelmerschreuder.nl/](http://jelmerschreuder.nl/))
-* Harro Verton - Developer ([http://wanwizard.eu/](http://wanwizard.eu/))
+* Dan Horrigan - Founder, Developer ([http://dhorrigan.com](http://dhorrigan.com))
 
-##Requirements
+##Downloading FuelPHP
 
-The planned requirements for Fuel are as follows:
+Since FuelPHP uses Submodules and since GitHub Downloads don't support submodules, do not download FuelPHP using the Downloads link here. Instead, use the [download links location in the docs](http://docs.fuelphp.com/installation/download.html).
 
-* PHP 5.3 or greater
-* Any web server
+##Cloning FuelPHP
 
-That's it! Nothing else.
+FuelPHP uses submodules for things like the **core** folder.  After you clone the repository you will need to init and update the submodules.
 
-##Roadmap
+Here is the basic usage:
 
-Help define it by [submitting your ideas here](http://community.fuelphp.com/fuelphp).
+    git clone --recursive git://github.com/fuel/fuel.git
 
-##Donate
+The above command is the same as running:
 
-[Donate Here](http://www.pledgie.com/campaigns/14124)
+    git clone git://github.com/fuel/fuel.git
+    cd fuel/
+    git submodule init
+    git submodule update
 
-Any donations would help support the framework and pay for software, development and hosting costs.   We understand if you cannot, but greatly appreciate anything you can give.
+You can also shorten the last two commands to one:
+
+    git submodule update --init
